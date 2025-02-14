@@ -1,7 +1,4 @@
-import logoFacebook from "../../assets/logoFacebook.svg";
-import logoTwitter from "../../assets/logoTwitter.svg";
-import logoLinkedin from "../../assets/logoLinkedin.svg";
-import logoInstagram from "../../assets/logoInstagram.svg";
+
 import { Link } from "react-router-dom";
 
 
@@ -20,16 +17,16 @@ export default function Footer() {
           
           <div className="flex ">
             <a href="http://facebook.com" target="_blank" rel="noopener noreferrer">
-              <img src={logoFacebook} alt="logo facebook" />
+              <img src="https://mybucketttimage.s3.us-east-2.amazonaws.com/logoFacebook.svg" alt="logo facebook" />
             </a>
             <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-              <img src={logoInstagram} alt="logo instagram" />
+              <img src="https://mybucketttimage.s3.us-east-2.amazonaws.com/logoInstagram.svg" alt="logo instagram" />
             </a>
             <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
-              <img src={logoTwitter} alt="logo twitter" />
+              <img src="https://mybucketttimage.s3.us-east-2.amazonaws.com/logoTwitter.svg"alt="logo twitter" />
             </a>
             <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-              <img src={logoLinkedin} alt="logo linkedin" />
+              <img src="https://mybucketttimage.s3.us-east-2.amazonaws.com/logoLinkedin.svg" alt="logo linkedin" />
             </a>
           </div>
           

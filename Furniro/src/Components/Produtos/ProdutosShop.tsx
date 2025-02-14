@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import CardProdutos from "../../Components/Produtos/CardProdutos";
 
-// Definição da interface para os produtos
 interface Produto {
-  id: number; // Adicionado para garantir identificação única
+  id: number; 
   name: string;
   description: string;
-  price: string;
+  price: number;
   oldPrice: string;
   image: string;
 }

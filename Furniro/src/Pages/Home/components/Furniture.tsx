@@ -1,4 +1,3 @@
-import images from "../../../assets/Images.png"
 
 export default function Furniture() {
     return (
@@ -12,7 +11,7 @@ export default function Furniture() {
                 </h1>
             </div>
             <div className="w-full">
-                <img src={images} alt="" className="w-full h-[60vh] lg:h-[80vh] object-cover" />
+                <img src="https://mybucketttimage.s3.us-east-2.amazonaws.com/images.png" alt="" className="w-full h-[60vh] lg:h-[80vh] object-cover" />
             </div>
        </section>
     )

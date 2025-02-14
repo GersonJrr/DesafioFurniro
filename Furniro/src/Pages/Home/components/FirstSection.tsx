@@ -1,4 +1,3 @@
-import bgHome from "../../../assets/bgHome.png"
 import Buttonbege from "./ButtonBege"
 
 export default function FirstSection() {
@@ -6,7 +5,7 @@ export default function FirstSection() {
     return (
         <div className="w-full flex justify-center items-center font-poppins">
    
-            <img src={bgHome} alt="Banner" className="w-full h-[100vh] object-cover" />
+            <img src="https://mybucketttimage.s3.us-east-2.amazonaws.com/bgHome.png" alt="Banner" className="w-full h-[100vh] object-cover" />
 
             <div className="absolute w-[80%] sm:w-[643px] h-[443px] rounded-[10px] text-left bg-bege pt-6 pl-[41px] space-y-[16px] right-[15%] sm:right-[100px]">
                 <p className="text-preto pt-[40px]">New Arrival</p>                

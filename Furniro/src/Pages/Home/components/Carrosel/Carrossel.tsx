@@ -1,9 +1,6 @@
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import line from '../../../../assets/line.svg';
-import arrow from '../../../../assets/arrow.svg';
-import sliderBtn from '../../../../assets/sliderBtn.svg';
 import { cardCarousel } from './CardCarrossel';
 import { useState, useRef } from "react";
 
@@ -35,7 +32,7 @@ const Carrossel = () => {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true  // Mostrar pontos mesmo em telas menores
+                    dots: true  
                 }
             },
             {
@@ -43,7 +40,7 @@ const Carrossel = () => {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    dots: true  // Mostrar pontos também em telas pequenas
+                    dots: true 
                 }
             }
         ]
@@ -66,7 +63,7 @@ const Carrossel = () => {
                 <div className="lg:w-11/12 overflow-hidden relative">
                     {currentSlide !== 0 && (
                         <button onClick={() => sliderRef.current?.slickPrev()} className="absolute z-10 top-56 lg:left-6 left-0 scale-[-1] w-12 h-12 rounded-full shadow-2xl bg-white flex items-center justify-center">
-                            <img src={sliderBtn} alt="prev-btn-icon" />
+                            <img src="https://mybucketttimage.s3.us-east-2.amazonaws.com/sliderBtn.svg" alt="prev-btn-icon" />
                         </button>
                     )}
                     <div className="overflow-hidden scroll-smooth">
@@ -82,13 +79,13 @@ const Carrossel = () => {
                                         <div className="bg-white py-6 px-8 w-auto opacity-90">
                                             <div className="flex gap-2 items-center">
                                                 <span className="font-medium">{item.level}</span>
-                                                <img src={line} alt="line-icon" />
+                                                <img src="https://mybucketttimage.s3.us-east-2.amazonaws.com/line.svg" alt="line-icon" />
                                                 <span className="font-medium">{item.title}</span>
                                             </div>
                                             <h1 className="mt-[8px] font-semibold text-2xl">{item.subTitle}</h1>
                                         </div>
                                         <div className="bg-[#B88E2F] flex items-center justify-center w-[40px] h-[40px]">
-                                            <img src={arrow} alt="arrow-icon" />
+                                            <img src="https://mybucketttimage.s3.us-east-2.amazonaws.com/arrow.svg" alt="arrow-icon" />
                                         </div>
                                     </div>
                                 </div>
@@ -96,7 +93,7 @@ const Carrossel = () => {
                         </Slider>
                     </div>
                     <button onClick={() => sliderRef.current?.slickNext()} className="absolute z-10 top-56 lg:right-6 right-0 w-12 h-12 rounded-full shadow-2xl bg-white flex items-center justify-center">
-                        <img src={sliderBtn} alt="next-btn-icon" />
+                        <img src="https://mybucketttimage.s3.us-east-2.amazonaws.com/sliderBtn.svg" alt="next-btn-icon" />
                     </button>
                 </div>
             </div>

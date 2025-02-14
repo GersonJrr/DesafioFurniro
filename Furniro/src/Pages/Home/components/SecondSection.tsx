@@ -1,7 +1,3 @@
-import dining from "../../../assets/dining.png"
-import living from "../../../assets/living.png"
-import bedroom from "../../../assets/bedroom.png"
-
 export default function SecondSection() {
    
     return (
@@ -14,15 +10,15 @@ export default function SecondSection() {
 
                 <div className="flex space-x-8 ">
                     <div className="flex flex-col items-center space-y-5">
-                    <img src={dining} alt="foto produto" />
+                    <img src="https://mybucketttimage.s3.us-east-2.amazonaws.com/dining.png" alt="foto produto" />
                     <span className="text-font-preto-home text-[24px] font-semibold">Dining</span>
                     </div>
                     <div className="flex flex-col items-center space-y-5">
-                    <img src={living} alt="foto produto" />
+                    <img src="https://mybucketttimage.s3.us-east-2.amazonaws.com/living.png" alt="foto produto" />
                     <span className="text-font-preto-home text-[24px] font-semibold">Living</span>
                     </div>
                     <div className="flex flex-col items-center space-y-5">
-                    <img src={bedroom} alt="foto produto" />
+                    <img src="https://mybucketttimage.s3.us-east-2.amazonaws.com/bedroom.png" alt="foto produto" />
                     <span className="text-font-preto-home text-[24px] font-semibold">Bedroom</span>
                     </div>
                 </div>

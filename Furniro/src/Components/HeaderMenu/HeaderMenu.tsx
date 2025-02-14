@@ -1,7 +1,4 @@
 import { useState } from "react";
-import logo from "../../assets/logo.svg";
-import pessoalogo from "../../assets/pessoaLogo.svg";
-import carrinhoLogo from "../../assets/carrinhoLogo.svg";
 import useMenu from "./Hooks/useMenu";
 import { Link } from "react-router-dom";
 import { useCart } from "../../Context/CartContext";
@@ -16,7 +13,7 @@ export default function HeaderMenu() {
   return (
     <nav className="flex bg-white py-6 font-medium px-8 lg:px-20 w-full justify-between items-center fixed top-0 left-0 z-50 font-poppins">
       <div className="flex items-center">
-        <img className="w-[50px] h-[32px] mr-1" src={logo} alt="logo furniro" />
+        <img className="w-[50px] h-[32px] mr-1" src="https://mybucketttimage.s3.us-east-2.amazonaws.com/logo.svg" alt="logo furniro" />
         <h1 className="text-black text-[34px] font-bold leading-normal font-montserrat">Furniro</h1>
       </div>
 
@@ -28,7 +25,7 @@ export default function HeaderMenu() {
       </div>
 
       <div className="flex space-x-4 items-center">
-        <a><img src={pessoalogo} alt="Profile" /></a>
+        <a><img src="https://mybucketttimage.s3.us-east-2.amazonaws.com/pessoaLogo.svg"alt="Profile" /></a>
 
         <div
           className="relative"
@@ -36,7 +33,7 @@ export default function HeaderMenu() {
           onMouseLeave={() => setIsHovered(false)}
         >
           <a onClick={() => setCartOpen(!isCartOpen)}>
-            <img src={carrinhoLogo} alt="Cart" className="cursor-pointer" />
+            <img src="https://mybucketttimage.s3.us-east-2.amazonaws.com/carrinhoLogo.svg" alt="Cart" className="cursor-pointer" />
           </a>
 
           <div
